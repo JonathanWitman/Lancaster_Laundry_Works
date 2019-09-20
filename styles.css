@@ -1,6 +1,7 @@
 body {
   margin: 0;
   min-width: 1005px;
+  background-color: #f2f2f2;
 }
 
 /* Top header and Navigation */
@@ -89,10 +90,6 @@ body {
   height: 100%;
   z-index: -1;
   position: absolute;
-  /*
-  top: 20%;
-  position: fixed;
-  */
 }
 
 .main2_container {
@@ -131,7 +128,82 @@ body {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.filler {
-  position: relative;
+/* About us Section*/
 
+.about_us_container {
+  position: relative;
+  width: 100%;
+  height: 465px;
+  font-family: sans-serif;
+  color: #204060;
+  text-shadow: 1px grey;
+  text-align: center;
 }
+
+.about_us_container h2 {
+  font-size: 54px;
+  overflow: auto;
+  margin-top: 7%;
+  font-weight: bolder;
+}
+
+.about_us_container p {
+  font-size: 22px;
+  max-width: 60%;
+  min-width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.about_us_container .img_container img {
+  margin-top: 2%;
+  display: inline-block;
+  min-width: 835px;
+  width: 58%;
+  height: 175px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.li_container {
+  width: 100%;
+  height: 80px;
+}
+
+.li_container h3 {
+  display: inline-block;
+  width: 161px;
+  margin-right: 2.5%;
+  margin-left: 1%;
+}
+
+.li_container #long {
+  word-break: break-all;
+}
+
+.pro_serve {
+  color: #204060;
+  width: 100%;
+  height: 260px;
+  font-family: sans-serif;
+  text-shadow: 1px grey;
+  text-align: center;
+}
+
+.pro_serve h2 {
+  font-size: 54px;
+  overflow: auto;
+  margin-top: 5%;
+  font-weight: bolder;
+}
+
+.pro_serve p {
+  font-size: 22px;
+  max-width: 60%;
+  min-width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Contact Us Section*/

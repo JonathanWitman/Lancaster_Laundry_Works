@@ -5,20 +5,22 @@
     <meta charset="utf-8">
     <title>Lancaster Laundry Works LLC</title>
     <link rel = "stylesheet" type = "text/css" href = "styles.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="main.js"></script>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+
   </head>
 
   <body>
 
     <header class="header_container">
-      <img src="images/LLW_logo.svg" alt="block logo" class="top_logo">
+      <img src="images/LLW_logo.svg" alt="block logo" class="top_logo" id="top">
 
       <nav class="navigation">
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#ab_us">About</a></li>
+          <li><a href="#pro_serv">Services</a></li>
+          <li><a href="#con">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -29,16 +31,20 @@
     </div>
 
     <main class="main_container">
-      <img src="images/row_of_washers.jpeg" alt="washers lined up">
+
+      <img src="images/row_of_washers.jpeg" alt="washers lined up" id="slide1">
+      <!-- <img src="images/basket.webp" alt="basket_part" id="slide2">
+      <img src="images/inlet_valve.webp" alt="inlet valve part" id="slide3"> -->
+
       <div class="main2_container">
         <h1>Commercial</br> Laundry</br> Service</br></h1>
-        <button type="button" class="touch_button">Get in Touch</button>
+        <a href="#con" class="touch_button">Get in Touch</a>
       </div>
     </main>
 
     <section class="about_us_container">
-      <h2>A Bit About Us</h2>
-      <p>Our mission at Lancaster Laundry Works is simple: to provide high-quality services for our valued clients.</br> Commercial Laundry is what we do and we are committed to getting the job done and doing it right.</p>
+      <h2 id="ab_us" >A Bit About Us</h2>
+      <p><strong>Our mission at Lancaster Laundry Works is simple:</strong> To provide <strong>high-quality</strong> services for our valued clients. Commercial Laundry is what we do and we are committed to getting the job done and <br><strong>doing it right.</strong></p>
 
       <div class="img_container">
         <img src="images/4logos.png" alt="various logos">
@@ -50,26 +56,40 @@
         <h3>SALES</h3>
         <h3>INSTALLATIONS</h3>
       </div>
+    </section>
 
-      </section>
+    <section class="display_container">
 
-      <section class="pro_serve">
-        <h2>Professional Services</h2>
-        <p>We offer repair and maintenance on all commercial washers and dryers. For more information please call us at 717-475-5028 or contact us using the messaging sy stem below.</p>
-      </section>
+      <div class="pro_serve">
+        <h2 id="pro_serv">Professional Services</h2>
+        <p>We offer repair and maintenance on all commercial washers and dryers. For more information please call us at <strong>717-475-5028</strong> or contact us using the messaging system below.</p>
+      </div>
 
-    <section class="contact_us">
+      <div class="contact_us">
+        <div class="form_div">
+          <input type="text" name="name" placeholder="NAME*" class="feild" required>
+          <input  type="email" name="email" placeholder="EMAIL*" class="feild" required>
+          <input  type="text" name="phone" placeholder="PHONE NUMBER*" class="feild2" required>
+          <input  type="text" name="address" placeholder="ADDRESS" class="feild2" required>
+          <input  type="text" name="subject" placeholder="SUBJECT" class="feild2" required>
+          <textarea name="comments" placeholder="MESSAGE" class="feild2" required></textarea>
+          <button name="send" type="submit" class="submit">SEND</button>
+        </div>
+        <div class="contact_info">
+          <h1 id="con">Get In Touch</h1>
+          <p>Lancaster Laundry Works LLC 2010 Franklin Rd <br>Washington Boro, PA 17582</p>
+          <h2>lancasterlaundryworks@gmail.com</h2>
+          <h2>717-475-5028</h2>
+          <p>Feel free to call 24/7 and leave a message. A service technician will return your call as soon as possible during business hours.</p>
+        </div>
+      </div>
+    </section>
 
-      <form method="post" name="contact_form" action="contact-form-handler.php">
-        Your Name:
-        <input type="text" name="name">
-        Email Address:
-        <input type="text" name="email">
-        Message:
-        <textarea name="message"></textarea>
-        <input type="submit" value="Submit">
-      </form>
-
+    <section class="copyright">
+      <a href="#top">
+        <img src="images/orange_boxes.svg" alt="bottom logo">
+      </a>
+      <h3>©2018 by Lancaster Laundry Works LLC</h3>
     </section>
 
   </body>

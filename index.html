@@ -6,16 +6,15 @@ title: Lancaster Laundry Works LLC
 {% include head.html %}
 
 <body>
-
   <header class="header_container">
     <img src="images/LLW_logo.svg" alt="block logo" class="top_logo" id="top">
     <div class="nav_container">
       <img src="../images/hamburger.svg" alt="nav hamburger icon" class="hamburger">
       <nav class="navigation">
         <ul>
-          <li><a href="#ab_us">About</a></li>
+          <li id="first_nav"><a href="#ab_us">About</a></li>
           <li><a href="#pro_serv">Services</a></li>
-          <li id="last_nav"><a href="#con">Contact</a></li>
+          <li><a href="#con">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -25,57 +24,79 @@ title: Lancaster Laundry Works LLC
       <h2 class="top_number">717-475-5028</h2>
   </div>
 
-
     <main class="main_container">
+      <div class="mainImg_container">
         <img src="images/row_of_washers.jpeg" alt="washers lined up" id="slide1">
-
-        <div class="main2_container">
-            <h1>Laundry Equipment<br> Repairs<br> & Sales<br>
-            </h1>
-            <a href="#con" class="touch_button">Get in Touch</a>
-        </div>
+      </div>
+      <div class="mainText_container">
+        <h1>Laundry Equipment<br> Repairs<br> & Sales<br></h1>
+        <a href="#con" class="touch_button">Get in Touch</a>
+      </div>
     </main>
+
     <section class="about_us_container">
-        <h2 id="ab_us">A Bit About LLW</h2>
-        <p><strong>LLW</strong> is dedicated to providing <strong>high-quality</strong> laundry services by working one-on-one with our customers and <strong>meeting their needs.</strong></p>
-        <div class="img_container">
-            <img src="images/4logos.png" alt="various logos">
-        </div>
-        <div class="li_container">
+        <h2 id="ab_us">About LLW</h2>
+        <p>LLW is a family owned business that has operated since 1970. We provide <b>high-quality</b> service and work one-on-one with our customers to meet their laundry needs.</p>
+
+        <div class="flex_images">
+          <div class="img1">
+            <img src="images/setting.svg" alt="gear">
             <h3>REPAIRS</h3>
+          </div>
+          <div class="img2">
+            <img src="images/tools.svg" alt="tools">
             <h3 id="long">PREVENTATIVE MAINTENANCE</h3>
+          </div>
+          <div class="img3">
+            <img src="images/dollar-price-tag.svg" alt="hammer and wrench">
             <h3>SALES</h3>
+          </div>
+          <div class="img4">
+            <img src="images/delivery-truck.svg" alt="delivery truck">
             <h3>INSTALLATIONS</h3>
+          </div>
         </div>
     </section>
+
     <section class="display_container">
-        <div class="pro_serve">
+        <section class="pro_serve">
             <h2 id="pro_serv">Professional Services</h2>
             <ul>
                 <li>Repair and maintenance for all brands of commercial and residential washers and dryers.</li>
                 <li>New and used washer, dryer and iron sales and installations.</li>
             </ul>
             <p>For more information please call us at <strong>717-475-5028</strong> or contact us using the messaging system below.</p>
-        </div>
-        <div class="contact_us">
-            <div class="form_div">
-                <input type="text" name="name" placeholder="NAME*" class="feild" required>
-                <input type="email" name="email" placeholder="EMAIL*" class="feild" required>
-                <input type="text" name="phone" placeholder="PHONE NUMBER*" class="feild2" required>
-                <input type="text" name="address" placeholder="ADDRESS" class="feild2" required>
-                <input type="text" name="subject" placeholder="SUBJECT" class="feild2" required>
-                <textarea name="comments" placeholder="MESSAGE" class="feild2" required></textarea>
-                <button name="send" type="submit" class="submit">SEND</button>
-            </div>
-            <div class="contact_info">
-                <h1 id="con">Get In Touch</h1>
-                <p>Lancaster Laundry Works LLC <br>2493 Mt Joy Rd Manheim, PA 17545</p>
-                <h2>lancasterlaundryworks@gmail.com</h2>
-                <h2>717-475-5028</h2>
-                <p>Feel free to call 24/7 and leave a message. A service technician will return your call as soon as possible during business hours.</p>
-            </div>
-        </div>
+        </section>
     </section>
+
+    <section class="contact_section">
+      <h1 id="con">Get In Touch</h1>
+      <div class="contact_us">
+        <div class="contact_info">
+            <h2>Lancaster Laundry Works LLC</h2>
+            <h3>2493 Mt Joy Rd Manheim, PA 17545</h3>
+            <h3>lancasterlaundryworks@gmail.com</h3>
+            <h3>717-475-5028</h3>
+            <p>When calling outside regular business hours, please leave a message detailing the services you require with applicable model and serial numbers and your call will be returned the next business day.</p>
+        </div>
+        <form action="https://formspree.io/f/mdoppowo" method="POST">
+          <input type="text" name="name"
+          placeholder="NAME*" class="feild" required>
+          <input type="text" name="email"
+          placeholder="EMAIL*" class="feild" required>
+          <input type="text" name="phone"
+          placeholder="PHONE NUMBER*" class="feild2" required>
+          <input type="text" name="address"
+          placeholder="ADDRESS" class="feild2" required>
+          <input type="text" name="subject"
+          placeholder="SUBJECT" class="feild2" required>
+          <textarea id="comment" name="comments"
+          placeholder="Description of service required / model & serial of equipment" class="feild2" required></textarea>
+          <button name="send" type="submit" class="submit">SEND</button>
+        </form>
+      </div>
+    </section>
+
     <section class="copyright">
         <a href="#top">
         <img src="images/orange_boxes.svg" alt="bottom logo">
